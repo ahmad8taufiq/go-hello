@@ -1,6 +1,6 @@
 package main
 
-import "hello/variable"
+import "github.com/ahmad8taufiq/go-hello/variable"
 
 func main() {
 	variable.NumFunc()

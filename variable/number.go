@@ -6,6 +6,7 @@ import (
 )
 
 func NumFunc() {
+	// Basic type
 	var integer8 int8 = -128
 	var integer16 int16 = -32768
 	var integer32 int32 = -2147483648
@@ -35,4 +36,17 @@ func NumFunc() {
 
 	fmt.Println(float1, "=>", reflect.TypeOf(float1))
 	fmt.Println(float2, "=>", reflect.TypeOf(float2))
+
+	fmt.Println("")
+
+	// Aliast type
+	var bite byte = 8
+	var run rune = -32
+	var integer int = -64
+	var unsignedInteger uint = 64
+
+	fmt.Println(bite, "=>", "byte /", reflect.TypeOf(bite))
+	fmt.Println(run, "=>", "rune /", reflect.TypeOf(run))
+	fmt.Println(integer, "=>", "int /", reflect.TypeOf(integer))
+	fmt.Println(unsignedInteger, "=>", "uint /", reflect.TypeOf(unsignedInteger))
 }
